@@ -14,6 +14,10 @@ body {
 
 .container {
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 header {
@@ -25,6 +29,78 @@ header {
     height: 100px;
     margin-left: 20px;
     margin-top: -10px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0px;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+nav ul {
+    height: 100vh;
+    list-style: none;
+    background: rgba(0,0,0, 0.5);
+    position: fixed;
+    top: 80px;
+    width: 65%;
+    right: -65%;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    padding: 15px 20px 15px 20px;
+    border-bottom: 1px solid black;
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+main {
+    height: 60vh;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1, h2 {
+    color: white;
+}
+
+main h1 {
+    font-size: 4.5em;
+}
+
+main h2 {
+    font-size: 1.5em;
+}
+
+.botao {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 700;
+    background-color: rgb(211, 208, 208);
+    width: 120px;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 20px;
 }
 
 @media (min-width: 576px) {
@@ -42,5 +118,38 @@ header {
     }
     .container {
         max-width: 620px;
+    }
+    nav ul {
+        width: 50%;
+        right: -50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    label {
+        display: none;
+    }
+    #logo img {
+        height: 120px;
+        margin-top: -10px;
+    }
+    nav ul {
+        width: 100%;
+        position: static;
+        height: 100px;
+        background-color: transparent;
+    }
+    header {
+        height: 100px;
+    }
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+    nav ul li a:hover {
+        color: red;
     }
 }
