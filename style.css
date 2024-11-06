@@ -41,16 +41,15 @@ header {
 }
 
 label {
-    font-size: 3em;
+    font-size: 2em;
     position: fixed;
     top: 15px;
     right: 15px;
 }
-
 nav ul {
-    height: 100vh;
+    height: 60vh;
     list-style: none;
-    background-image: linear-gradient(to right, rgba(235, 231, 231, 0.5), rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(to right, transparent, rgba(235, 231, 231, 0.01), rgba(255, 255, 255, 1));
     position: fixed;
     top: 80px;
     width: 65%;
@@ -59,19 +58,19 @@ nav ul {
 }
 
 nav ul li {
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px 20px 20px;
     text-align: right;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     color: black;
 }
 main {
     height: 60vh;
     background-image: url(img/banner.jpg);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -85,7 +84,7 @@ main h1, h2 {
 
 main h1 {
     font-size: 5em;
-    margin: 0px 0px 40px 0px;
+    padding: 0px 0px 25px 0px;
 }
 
 main h2 {
@@ -128,8 +127,23 @@ main h1, h2, a {
         max-width: 620px;
     }
     nav ul {
-        width: 50%;
-        right: -50%;
+        width: 40%;
+        right: -40%;
+        height: 51vh;
+    }
+    nav ul li {
+        font-size: 1.4em;
+        padding: 15px 20px 30px 20px;
+    }
+    main {
+        height: 50vh;
+    }
+    main h1 {
+        font-size: 8em;
+        padding: 0px 0px 15px 0px;
+    }
+    main h2 {
+        font-size: 1.2em;
     }
 }
 
@@ -141,31 +155,75 @@ main h1, h2, a {
         display: none;
     }
     #logo img {
-        height: 120px;
-        margin-top: -10px;
+        height: 100px;
+        margin-top: -5px;
     }
     nav ul {
         width: 100%;
         position: static;
-        height: 100px;
+        height: 20px;
         background-color: transparent;
         background-image: none;
     }
+    nav ul li a{
+        font-weight: 400;
+        font-size: 0.8em
+    }
     header {
-        height: 100px;
+        height: 90px;
     }
     nav ul li {
         float: left;
         border: 0;
     }
     nav ul li a:hover {
-        color: red;
+        color: rgb(116, 114, 114);
     }
-
+    main {
+        height: 60vh;
+    }
     main h1 {
         font-size: 7em;
     }
     main h2 {
         font-size: 1.2em;
+    }
+}
+
+@media (min-width: 2400px) {
+    .container {
+        max-width: 1800px;
+    }
+    nav ul {
+        width: 100%;
+        position: static;
+        height: 20px;
+        background-color: transparent;
+        background-image: none;
+    }
+    nav ul li a{
+        font-weight: 700;
+        font-size: 0.9em
+    }
+    header {
+        height: 90px;
+    }
+    main {
+        height: 60vh;
+        background-size: cover;
+    }
+    main h1 {
+        font-size: 12em;
+        padding-bottom: 30px;
+    }
+    main h2 {
+        font-size: 1.8em;
+        padding-bottom: 10px;
+    }
+    .botao {
+        font-size: 1.5em;
+        font-weight: 700;
+        width: 210px;
+        padding: 12px;
     }
 }
