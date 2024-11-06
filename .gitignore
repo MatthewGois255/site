@@ -1,3 +1,4 @@
-.vscode
-adiantado
-doc
+.vscode/
+adiantado/
+doc/
+.gitignore
