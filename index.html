@@ -19,12 +19,12 @@
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check">&#x268c;</label>
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Conteúdo</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -33,6 +33,33 @@
         <h2>O esporte te transforma, nós te acompanhamos</h2>
         <a href="" class="botao">Saiba mais</a>
     </main>
+    <!-- <div class="imagem">
+        <h1>linuquis</h1>
+        <img scr="" id="image">
+    </div> -->
+
+    <!-- seção de destaque -->
+    <section id="destaque">
+        <div class="container">
+            <!-- imagem de destaque -->
+            <div class="imagemDestaque">
+                <img id="" src="" alt="produtos da loja">
+            </div>
+            <div class="textoDestaque">
+                <h2>CONFORTO e EFICIÊNCIA</h2>
+                <p class="pprimeiro">O que há de melhor no quesito roupa esportiva</p>
+                <p>para você alcançar a melhor versão de si mesmo</p>
+            </div>
+        </div>
+    </section>
+<script type="text/javascript">
+    let image = document.getElementById('image');
+    let images = ['img/image1.jpg','img/image2.jpg','img/image3.jpg','img/image4.jpg',];
+    setInterval(function(){
+        let random = Math.floor(Math.random() * 4);
+        image.src = images[random];
+    }, 800);
+</script>
 </body>
 
 </html>

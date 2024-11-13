@@ -7,6 +7,8 @@
     border: 0;
 }
 
+/* layout */
+
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -17,9 +19,13 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
+
+/* fim layout */
+
+
+/*smartphone portrait */
 
 header {
     height: 80px;
@@ -107,9 +113,55 @@ main h2 {
     margin-top: 20px;
 }
 
-main h1, h2, a {
-    margin: 0px 0px 0px -15px
+main h1 {
+    margin: 0px 0px 0px -15px;
 }
+main h2 {
+    margin: 0px 0px 0px -15px;
+}
+
+main a {
+    margin: 0px 0px 0px -15px;
+}
+
+#destaque {
+    background-image: url(img/destaquebg.png);
+    background-size: cover;
+    background-position: right;
+    height: 60vh;
+}
+
+#destaque .container {
+    height: 50vh;
+    text-align: center;
+}
+
+.imagemDestaque {
+    display: none;
+}
+
+.textoDestaque {
+    color: white;
+}
+
+.textoDestaque>h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.textoDestaque>p {
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+#destaque .pprimeiro {
+    margin-top: 40px;
+}
+
+/* fim smatphone portrait */
+
+
+/* smatphone landscape */
 
 @media (min-width: 576px) {
     #logo img {
@@ -119,6 +171,11 @@ main h1, h2, a {
         max-width: 540px;
     }
 }
+
+/* fim smartphone landscape */
+
+
+/* tablet portrait */
 
 @media (min-width: 768px) {
     #logo img {
@@ -132,6 +189,11 @@ main h1, h2, a {
         right: -50%;
     }
 }
+
+/* fim tablet portrait */
+
+
+/* computador */
 
 @media (min-width: 1200px) {
     .container {
@@ -169,3 +231,4 @@ main h1, h2, a {
         font-size: 1.2em;
     }
 }
+/* fim computador */
