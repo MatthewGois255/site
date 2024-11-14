@@ -125,11 +125,15 @@ main a {
 }
 
 #destaque {
+    background-image: url(img/destaquebg3.png);
+}
+
+/* #destaque {
     background-image: url(img/destaquebg.png);
     background-size: cover;
     background-position: right;
     height: 60vh;
-}
+} */
 
 #destaque .container {
     height: 50vh;
