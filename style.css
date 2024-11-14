@@ -126,6 +126,8 @@ main a {
 
 #destaque {
     background-image: url(img/destaquebg3.png);
+    background-position: center;
+    height: 120vh;
 }
 
 /* #destaque {
@@ -146,20 +148,24 @@ main a {
 
 .textoDestaque {
     color: white;
+    margin-top: 50px;
 }
 
-.textoDestaque>h2 {
-    font-size: 2em;
-    margin-bottom: 50px;
+.titulogrande {
+    font-size: 2.2em;
 }
 
-.textoDestaque>p {
+.e {
+    margin-bottom: 8px;
+}
+
+.textoDestaque>p, .pprimeiro{
     font-size: 1.05em;
     font-weight: 700;
 }
 
 #destaque .pprimeiro {
-    margin-top: 40px;
+    margin: 40px 0px 18px 0px;
 }
 
 /* fim smatphone portrait */
