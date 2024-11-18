@@ -55,17 +55,34 @@
                     <p>o que há de melhor no quesito de roupa esportiva</p>
                     </div>
                     <!-- fazer o próximo texto aparecer quando eu desco a tela-->
-                    <p>para você alcançar a melhor versão de si mesmo</p>
+                    <p class ="reveal">para você alcançar a melhor versão de si mesmo</p>
             </div>
         </div>
     </section>
 <script type="text/javascript">
-    let image = document.getElementById('image');
-    let images = ['img/image1.jpg','img/image2.jpg','img/image3.jpg','img/image4.jpg',];
-    setInterval(function(){
-        let random = Math.floor(Math.random() * 4);
-        image.src = images[random];
-    }, 800);
+    // let image = document.getElementById('image');
+    // let images = ['img/image1.jpg','img/image2.jpg','img/image3.jpg','img/image4.jpg',];
+    // setInterval(function(){
+        // let random = Math.floor(Math.random() * 4);
+        // image.src = images[random];
+    // }, 800);
+    window.addEventListener('scroll', reveal);
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+        
+        for(var i = 0; i < reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
 </script>
 </body>
 

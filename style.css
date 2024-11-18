@@ -168,6 +168,17 @@ main a {
     margin: 40px 0px 18px 0px;
 }
 
+.reveal {
+    position: relative;
+    transform: translateY(140px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
 /* fim smatphone portrait */
 
 
