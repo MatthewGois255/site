@@ -192,6 +192,20 @@ main a {
     .container {
         max-width: 540px;
     }
+    #destaque {
+        background-image: url(img/destaquebg4.png);
+        background-position: bottom ;
+        height: 170vh;
+    }
+    #destaque .container{
+        width: fit-content;
+    }
+    .textoDestaque {
+        margin-top: 90px;
+    }
+    .reveal {
+        position: relative;
+        transform: translateY(40px);
 }
 
 /* fim smartphone landscape */
