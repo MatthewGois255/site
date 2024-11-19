@@ -225,10 +225,40 @@ main a {
         width: 50%;
         right: -50%;
     }
+    #destaque {
+        background-image: url(img/destaquebg5.png);
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+    }
+    .textoDestaque {
+        margin-top: 0px;
+    }
+    
+    .titulogrande {
+        font-size: 4em;
+    }
+    
+    .e {
+        font-size: 2.5em;
+        margin-bottom: 8px;
+    }
+    
+    .textoDestaque>p, .pprimeiro{
+        font-size: 1.5em;
+        font-weight: 650;
+    }
+     
+    .reveal {
+        transform: translateY(310px);
+    }
 }
 
 /* fim tablet portrait */
 
+@media (min-width: 1024) {
+    
+}
 
 /* computador */
 
