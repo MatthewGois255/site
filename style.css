@@ -256,10 +256,6 @@ main a {
 
 /* fim tablet portrait */
 
-@media (min-width: 1024) {
-    
-}
-
 /* computador */
 
 @media (min-width: 1200px) {
@@ -296,6 +292,37 @@ main a {
     }
     main h2 {
         font-size: 1.2em;
+    }
+    #destaque {
+        background-image: url(img/destaquebg.png);
+        background-size: cover;
+        background-position: top;
+        height: 90vh;
+    }
+    #destaque .container {
+        text-align: unset;
+        width:min-content;
+    }
+    .titulo {
+        display:flex;
+        align-items: center;
+    }
+    .titulogrande {
+        font-size: 4em;
+    }
+    
+    .e {
+        font-size: 2.5em;
+        margin-bottom: 8px;
+    }
+    
+    .textoDestaque>p, .pprimeiro{
+        font-size: 1.5em;
+        font-weight: 650;
+    }
+     
+    .reveal {
+        transform: translateY(310px);
     }
 }
 /* fim computador */
