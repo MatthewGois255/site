@@ -9,4 +9,4 @@ A organização "Correr é Viver" e todo o conteúdo apresentado não são reais
 ## AUTOR
 Matheus Gois
 
-<img style="width: 100px;" src="img/qrcode.png" alt="qrcode">
+<img style="width: 200px; aling-text: center;" src="img/qrcode.png" alt="qrcode">
