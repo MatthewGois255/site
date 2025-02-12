@@ -92,22 +92,10 @@
             <h2>Conteúdo</h2>
             <div class="Cards Flex4">
                 <div class="Card">
-                    <img src="img/estruturahtml.jpg" alt="Estrutura html5">
-                    <h3>TREINO</h3>
-                    <p>Faz diferença se aquecer antes da corrida?<br>E como fazer certo?</p>
-                    <a href="https://www.corridaperfeita.com/aquecimento-antes-de-correr/" target="_blank" class="Botao">Saiba +</a>
-                </div>
-                <div class="Card">
-                    <img src="img/boxmodel.jpg" alt="Box model CSS">
-                    <h3>REVIEWS</h3>
-                    <p id="textoChato">Como escolher o primeiro tênis de corrida?<br>Review dos tênis mais custo-benefício para quem está iniciando</p>
-                    <a href="https://esportividade.com.br/tenis-de-corrida-para-iniciantes-dicas-e-melhores-modelos/" target="_blank" class="Botao">Saiba +</a>
-                </div>
-                <div class="Card">
-                    <img src="img/breakpoints.jpg" alt="breakpoints">
-                    <h3>NOTÍCIAS</h3>
-                    <p id="outroTextoChato">Confira os vencedores da 99º edição da São Silvestre</p>
-                    <a href="https://cbat.org.br/noticia/106487/quenianos-vencem-99-edicao-da-sao-silvestre-mas-brasileiros-tem-lugar-no-podio" target="_blank" class="Botao">Saiba +</a>
+                    <img id="imagem" src="img/estruturahtml.jpg" alt="Estrutura html5">
+                    <h3 id="header3">TREINO</h3>
+                    <p id="par">Faz diferença se aquecer antes da corrida?<br>E como fazer certo?</p>
+                    <a id="link" href="https://www.corridaperfeita.com/aquecimento-antes-de-correr/" target="_blank" class="Botao">Saiba +</a>
                 </div>
             </div>
             <div id="todos">
@@ -139,6 +127,23 @@
         let ano = document.getElementById("copyrightYear")
         let anoAtual = new Date().getFullYear()
         ano.textContent = anoAtual
+
+        let imagem = ['img/estruturahtml.jpg', "img/boxmodel.jpg", "img/breakpoints.jpg"]
+        let header3 = ['TREINO', 'REVIEWS', 'NOTÍCIAS']
+        let par = ['Faz diferença se aquecer antes da corrida?<br>E como fazer certo?', 'Como escolher o primeiro tênis de corrida?<br>Review dos tênis mais custo-benefício para quem está iniciando', 'Confira os vencedores da 99º edição da São Silvestre']
+        let link = ['https://www.corridaperfeita.com/aquecimento-antes-de-correr/','https://esportividade.com.br/tenis-de-corrida-para-iniciantes-dicas-e-melhores-modelos/','https://cbat.org.br/noticia/106487/quenianos-vencem-99-edicao-da-sao-silvestre-mas-brasileiros-tem-lugar-no-podio']
+        let index = 0
+        function slider(){
+            index++
+            if (index >= 3){
+                index = 0
+            }
+            document.querySelector('#imagem').src = imagem[index]
+            document.querySelector('#header3').innerHTML = header3[index]
+            document.querySelector('#par').innerHTML = par[index]
+            document.querySelector('#link').href = link[index] 
+        }
+        setInterval(slider, 3000)
     </script>
 </body>
 
